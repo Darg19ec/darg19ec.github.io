@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dial Ecuador · Radios del Ecuador en vivo</title>
+<meta name="description" content="Dial Ecuador: app gratuita para Android con cientos de radios ecuatorianas en vivo. Busca por provincia o género, guarda favoritas y escucha sin registrarte.">
+<meta property="og:title" content="Dial Ecuador · Radios del Ecuador en vivo">
+<meta property="og:description" content="Las radios del Ecuador en vivo, en un solo dial.">
+<meta property="og:image" content="img/compartir.png">
+<meta name="theme-color" content="#16203a">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="marca" href="./"><img src="img/icono-192.png" alt="">Dial Ecuador</a>
+    <nav aria-label="Principal">
+      <a href="#funciones">La app</a>
+      <a href="#emisoras">Emisoras</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="kicker">Radio en vivo por internet</p>
+        <h1>Dial<br>Ecuador</h1>
+        <div class="tri"></div>
+        <p class="lead">Cientos de radios ecuatorianas en una sola app. Busca la tuya, toca y escucha.</p>
+        <div class="ctas">
+          <span class="btn btn-pronto">Próximamente en Google Play</span>
+          <a class="btn btn-linea" href="#emisoras">Contacto</a>
+        </div>
+        <p class="pronto-nota">App gratuita para Android 7.0 o superior.</p>
+      </div>
+
+      <div class="dial" aria-label="Dial de radio sintonizado en 98.4 megahertz">
+        <div class="dial-top"><span>FM · Ecuador</span><span>Estéreo</span></div>
+        <div class="freq">98.4<small>MHz</small></div>
+        <div class="estado"><span class="vivo"></span>En vivo</div>
+        <div class="escala" id="escala"><span class="aguja"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="funciones">
+    <div class="wrap">
+      <h2>Qué puedes hacer</h2>
+      <p class="intro">Dial Ecuador reúne las emisoras ecuatorianas que transmiten por internet y te las pone a un toque, sin cuentas ni registros.</p>
+      <div class="funciones">
+        <div class="fn"><h3>Radios de todo el país</h3><p>Noticias, deportes, salsa, cumbia, pop, rock, música cristiana y más, de distintas provincias.</p></div>
+        <div class="fn"><h3>Busca por provincia o género</h3><p>Escribe el nombre, elige tu provincia o toca un género para encontrar tu emisora al instante.</p></div>
+        <div class="fn"><h3>Un dial que se mueve</h3><p>La aguja recorre la escala de 88 a 108 MHz y se detiene en la frecuencia de la emisora que suena.</p></div>
+        <div class="fn"><h3>Tus favoritas a mano</h3><p>Marca con la estrella las radios que más escuchas y encuéntralas en un solo lugar.</p></div>
+        <div class="fn"><h3>Sigue sonando</h3><p>La radio continúa con la pantalla bloqueada o mientras usas otras aplicaciones.</p></div>
+        <div class="fn"><h3>Controles en la pantalla de bloqueo</h3><p>Anterior, pausa, siguiente y cerrar desde la notificación, sin desbloquear el celular. También con tus audífonos Bluetooth.</p></div>
+        <div class="fn"><h3>Temporizador para dormir</h3><p>Elige 15, 30 o 45 minutos, 1 hora o 2 horas y la radio se apaga sola, bajando el volumen poco a poco.</p></div>
+        <div class="fn"><h3>Gratis y liviana</h3><p>No pide registro ni datos personales. Se mantiene con publicidad de Google.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fondos">
+    <div class="wrap">
+      <h2>Cinco fondos del Ecuador</h2>
+      <p class="intro">Cambia el fondo de la app y los colores de las letras se ajustan solos para que todo se lea bien.</p>
+      <div class="muestras">
+        <div class="muestra m-gal">Galápagos</div>
+        <div class="muestra m-ama">Amazonía</div>
+        <div class="muestra m-and">Andes al atardecer</div>
+        <div class="muestra m-noc">Noche quiteña</div>
+        <div class="muestra m-tri">Tricolor</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="emisoras" id="emisoras">
+    <div class="wrap">
+      <div>
+        <h2>¿Tienes una emisora?</h2>
+        <p class="intro" style="margin:0">Si tu radio no aparece, cambió su señal o quieres actualizar sus datos, escríbenos. También respondemos sugerencias y reportes de emisoras que no suenan.</p>
+      </div>
+      <div class="contacto">
+        <span class="correo" id="correo">darg19.ec@outlook.com</span>
+        <div class="ctas">
+          <a class="btn btn-azul" href="mailto:darg19.ec@outlook.com?subject=Dial%20Ecuador">Escribir un correo</a>
+          <button class="btn btn-linea" style="color:var(--fg);border-color:var(--line)" id="copiar" type="button">Copiar correo</button>
+        </div>
+        <span class="copiado" id="copiado" aria-live="polite"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="Pie"><a href="privacidad.html">Política de privacidad</a><a href="#emisoras">Contacto</a></nav>
+    <p>Las emisoras y sus transmisiones pertenecen a sus dueños. Dial Ecuador no está afiliada a ellas. La lista de emisoras proviene del directorio abierto radio-browser.info.</p>
+    <p>© 2026 DARG19-EC · Ecuador. Google Play es una marca de Google LLC.</p>
+  </div>
+</footer>
+
+<script>
+// escala del dial: 88 a 108 MHz
+(function(){
+  const e=document.getElementById("escala");let h="";
+  for(let f=88;f<=108;f++){const x=(f-88)/20*100;h+=`<i style="left:${x}%;height:${f%2===0?20:10}px"></i>`;if(f%4===0)h+=`<b style="left:${x}%">${f}</b>`}
+  e.insertAdjacentHTML("afterbegin",h);
+})();
+// copiar correo
+document.getElementById("copiar").addEventListener("click",()=>{
+  const t="darg19.ec@outlook.com",msg=document.getElementById("copiado");
+  const sel=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById("correo"));const s=getSelection();s.removeAllRanges();s.addRange(r);msg.textContent="Correo seleccionado: cópialo con Ctrl+C."};
+  try{navigator.clipboard.writeText(t).then(()=>msg.textContent="Correo copiado.",sel)}catch(e){sel()}
+});
+</script>
+</body>
+</html>
